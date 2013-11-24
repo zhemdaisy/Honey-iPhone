@@ -19,6 +19,12 @@
 		AB72FFF7183E52CC000920E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFF6183E52CC000920E5 /* XCTest.framework */; };
 		AB72FFF8183E52CC000920E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFDD183E52CC000920E5 /* Foundation.framework */; };
 		AB72FFF9183E52CC000920E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFE1183E52CC000920E5 /* UIKit.framework */; };
+		AB9F87131841F69700CC3FAF /* Honey.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F87121841F69700CC3FAF /* Honey.png */; };
+		AB9F87151841F69F00CC3FAF /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = AB9F87141841F69F00CC3FAF /* tap.aif */; };
+		AB9F87171841F6E900CC3FAF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9F87161841F6E900CC3FAF /* AudioToolbox.framework */; };
+		AB9F871B1841F7D400CC3FAF /* SoundPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9F871A1841F7D400CC3FAF /* SoundPlayManager.m */; };
+		AB9F871E184208AE00CC3FAF /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9F871D184208AE00CC3FAF /* LoginView.m */; };
+		AB9F8720184208D200CC3FAF /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9F871F184208D200CC3FAF /* LoginView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +54,14 @@
 		AB72FFF5183E52CC000920E5 /* HoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB72FFF6183E52CC000920E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AB72FFFE183E52CC000920E5 /* HoneyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoneyTests-Info.plist"; sourceTree = "<group>"; };
+		AB9F87121841F69700CC3FAF /* Honey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Honey.png; sourceTree = "<group>"; };
+		AB9F87141841F69F00CC3FAF /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.aif; sourceTree = "<group>"; };
+		AB9F87161841F6E900CC3FAF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		AB9F87191841F7D400CC3FAF /* SoundPlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundPlayManager.h; path = "音效/SoundPlayManager.h"; sourceTree = "<group>"; };
+		AB9F871A1841F7D400CC3FAF /* SoundPlayManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SoundPlayManager.m; path = "音效/SoundPlayManager.m"; sourceTree = "<group>"; };
+		AB9F871C184208AE00CC3FAF /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		AB9F871D184208AE00CC3FAF /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		AB9F871F184208D200CC3FAF /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9F87171841F6E900CC3FAF /* AudioToolbox.framework in Frameworks */,
 				AB72FFE0183E52CC000920E5 /* CoreGraphics.framework in Frameworks */,
 				AB72FFE2183E52CC000920E5 /* UIKit.framework in Frameworks */,
 				AB72FFDE183E52CC000920E5 /* Foundation.framework in Frameworks */,
@@ -77,6 +92,7 @@
 		AB72FFD1183E52CC000920E5 = {
 			isa = PBXGroup;
 			children = (
+				AB9F87051841EFA600CC3FAF /* Recources */,
 				AB72FFE3183E52CC000920E5 /* Honey */,
 				AB72FFFC183E52CC000920E5 /* HoneyTests */,
 				AB72FFDC183E52CC000920E5 /* Frameworks */,
@@ -96,6 +112,7 @@
 		AB72FFDC183E52CC000920E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB9F87161841F6E900CC3FAF /* AudioToolbox.framework */,
 				AB72FFDD183E52CC000920E5 /* Foundation.framework */,
 				AB72FFDF183E52CC000920E5 /* CoreGraphics.framework */,
 				AB72FFE1183E52CC000920E5 /* UIKit.framework */,
@@ -107,10 +124,14 @@
 		AB72FFE3183E52CC000920E5 /* Honey */ = {
 			isa = PBXGroup;
 			children = (
+				AB9F87181841F78400CC3FAF /* 音效 */,
 				AB72FFEC183E52CC000920E5 /* AppDelegate.h */,
 				AB72FFED183E52CC000920E5 /* AppDelegate.m */,
 				AB72FFEF183E52CC000920E5 /* Images.xcassets */,
 				AB72FFE4183E52CC000920E5 /* Supporting Files */,
+				AB9F871C184208AE00CC3FAF /* LoginView.h */,
+				AB9F871D184208AE00CC3FAF /* LoginView.m */,
+				AB9F871F184208D200CC3FAF /* LoginView.xib */,
 			);
 			path = Honey;
 			sourceTree = "<group>";
@@ -142,6 +163,41 @@
 				AB72FFFF183E52CC000920E5 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB9F87051841EFA600CC3FAF /* Recources */ = {
+			isa = PBXGroup;
+			children = (
+				AB9F87101841F66A00CC3FAF /* imags */,
+				AB9F87111841F66A00CC3FAF /* sounds */,
+			);
+			name = Recources;
+			path = Recourse;
+			sourceTree = "<group>";
+		};
+		AB9F87101841F66A00CC3FAF /* imags */ = {
+			isa = PBXGroup;
+			children = (
+				AB9F87121841F69700CC3FAF /* Honey.png */,
+			);
+			path = imags;
+			sourceTree = "<group>";
+		};
+		AB9F87111841F66A00CC3FAF /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				AB9F87141841F69F00CC3FAF /* tap.aif */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+		AB9F87181841F78400CC3FAF /* 音效 */ = {
+			isa = PBXGroup;
+			children = (
+				AB9F87191841F7D400CC3FAF /* SoundPlayManager.h */,
+				AB9F871A1841F7D400CC3FAF /* SoundPlayManager.m */,
+			);
+			name = "音效";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,6 +277,9 @@
 			files = (
 				AB72FFE8183E52CC000920E5 /* InfoPlist.strings in Resources */,
 				AB72FFF0183E52CC000920E5 /* Images.xcassets in Resources */,
+				AB9F87151841F69F00CC3FAF /* tap.aif in Resources */,
+				AB9F8720184208D200CC3FAF /* LoginView.xib in Resources */,
+				AB9F87131841F69700CC3FAF /* Honey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -240,6 +299,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB72FFEE183E52CC000920E5 /* AppDelegate.m in Sources */,
+				AB9F871B1841F7D400CC3FAF /* SoundPlayManager.m in Sources */,
+				AB9F871E184208AE00CC3FAF /* LoginView.m in Sources */,
 				AB72FFEA183E52CC000920E5 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,6 +493,7 @@
 				AB720008183E52CC000920E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB720009183E52CC000920E5 /* Build configuration list for PBXNativeTarget "HoneyTests" */ = {
 			isa = XCConfigurationList;
@@ -440,6 +502,7 @@
 				AB72000B183E52CC000920E5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AB72FFD5183E52CC000920E5 /* Build configuration list for PBXProject "Honey" */ = {
 			isa = XCConfigurationList;
