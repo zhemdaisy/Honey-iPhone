@@ -19,12 +19,24 @@
 		AB72FFF7183E52CC000920E5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFF6183E52CC000920E5 /* XCTest.framework */; };
 		AB72FFF8183E52CC000920E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFDD183E52CC000920E5 /* Foundation.framework */; };
 		AB72FFF9183E52CC000920E5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFE1183E52CC000920E5 /* UIKit.framework */; };
-		AB9F87131841F69700CC3FAF /* Honey.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F87121841F69700CC3FAF /* Honey.png */; };
 		AB9F87151841F69F00CC3FAF /* tap.aif in Resources */ = {isa = PBXBuildFile; fileRef = AB9F87141841F69F00CC3FAF /* tap.aif */; };
 		AB9F87171841F6E900CC3FAF /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9F87161841F6E900CC3FAF /* AudioToolbox.framework */; };
 		AB9F871B1841F7D400CC3FAF /* SoundPlayManager.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9F871A1841F7D400CC3FAF /* SoundPlayManager.m */; };
 		AB9F871E184208AE00CC3FAF /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9F871D184208AE00CC3FAF /* LoginView.m */; };
 		AB9F8720184208D200CC3FAF /* LoginView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9F871F184208D200CC3FAF /* LoginView.xib */; };
+		AB9F873118423E3200CC3FAF /* login_avatar.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872618423E3200CC3FAF /* login_avatar.png */; };
+		AB9F873218423E3200CC3FAF /* login_avatar@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872718423E3200CC3FAF /* login_avatar@2x.png */; };
+		AB9F873318423E3200CC3FAF /* login_dropdown_avatar_border.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872818423E3200CC3FAF /* login_dropdown_avatar_border.png */; };
+		AB9F873418423E3200CC3FAF /* login_dropdown_avatar_border@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872918423E3200CC3FAF /* login_dropdown_avatar_border@2x.png */; };
+		AB9F873518423E3200CC3FAF /* login_textfield.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872A18423E3200CC3FAF /* login_textfield.png */; };
+		AB9F873618423E3200CC3FAF /* login_textfield@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872B18423E3200CC3FAF /* login_textfield@2x.png */; };
+		AB9F873718423E3200CC3FAF /* login_textfield_more.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872C18423E3200CC3FAF /* login_textfield_more.png */; };
+		AB9F873818423E3200CC3FAF /* login_textfield_more@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872D18423E3200CC3FAF /* login_textfield_more@2x.png */; };
+		AB9F873918423E3200CC3FAF /* login_textfield_more_flip.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872E18423E3200CC3FAF /* login_textfield_more_flip.png */; };
+		AB9F873A18423E3200CC3FAF /* login_textfield_more_flip@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F872F18423E3200CC3FAF /* login_textfield_more_flip@2x.png */; };
+		AB9F873B18423E3200CC3FAF /* Honey.png in Resources */ = {isa = PBXBuildFile; fileRef = AB9F873018423E3200CC3FAF /* Honey.png */; };
+		AB9F87CA18424A0500CC3FAF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9F87C818424A0500CC3FAF /* ViewController.m */; };
+		AB9F87CB18424A0500CC3FAF /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB9F87C918424A0500CC3FAF /* ViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +66,6 @@
 		AB72FFF5183E52CC000920E5 /* HoneyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HoneyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB72FFF6183E52CC000920E5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		AB72FFFE183E52CC000920E5 /* HoneyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "HoneyTests-Info.plist"; sourceTree = "<group>"; };
-		AB9F87121841F69700CC3FAF /* Honey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Honey.png; sourceTree = "<group>"; };
 		AB9F87141841F69F00CC3FAF /* tap.aif */ = {isa = PBXFileReference; lastKnownFileType = file; path = tap.aif; sourceTree = "<group>"; };
 		AB9F87161841F6E900CC3FAF /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		AB9F87191841F7D400CC3FAF /* SoundPlayManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SoundPlayManager.h; path = "音效/SoundPlayManager.h"; sourceTree = "<group>"; };
@@ -62,6 +73,20 @@
 		AB9F871C184208AE00CC3FAF /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
 		AB9F871D184208AE00CC3FAF /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
 		AB9F871F184208D200CC3FAF /* LoginView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginView.xib; sourceTree = "<group>"; };
+		AB9F872618423E3200CC3FAF /* login_avatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_avatar.png; sourceTree = "<group>"; };
+		AB9F872718423E3200CC3FAF /* login_avatar@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_avatar@2x.png"; sourceTree = "<group>"; };
+		AB9F872818423E3200CC3FAF /* login_dropdown_avatar_border.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_dropdown_avatar_border.png; sourceTree = "<group>"; };
+		AB9F872918423E3200CC3FAF /* login_dropdown_avatar_border@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_dropdown_avatar_border@2x.png"; sourceTree = "<group>"; };
+		AB9F872A18423E3200CC3FAF /* login_textfield.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_textfield.png; sourceTree = "<group>"; };
+		AB9F872B18423E3200CC3FAF /* login_textfield@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_textfield@2x.png"; sourceTree = "<group>"; };
+		AB9F872C18423E3200CC3FAF /* login_textfield_more.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_textfield_more.png; sourceTree = "<group>"; };
+		AB9F872D18423E3200CC3FAF /* login_textfield_more@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_textfield_more@2x.png"; sourceTree = "<group>"; };
+		AB9F872E18423E3200CC3FAF /* login_textfield_more_flip.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_textfield_more_flip.png; sourceTree = "<group>"; };
+		AB9F872F18423E3200CC3FAF /* login_textfield_more_flip@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "login_textfield_more_flip@2x.png"; sourceTree = "<group>"; };
+		AB9F873018423E3200CC3FAF /* Honey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Honey.png; sourceTree = "<group>"; };
+		AB9F87C718424A0500CC3FAF /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB9F87C818424A0500CC3FAF /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB9F87C918424A0500CC3FAF /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +157,9 @@
 				AB9F871C184208AE00CC3FAF /* LoginView.h */,
 				AB9F871D184208AE00CC3FAF /* LoginView.m */,
 				AB9F871F184208D200CC3FAF /* LoginView.xib */,
+				AB9F87C718424A0500CC3FAF /* ViewController.h */,
+				AB9F87C818424A0500CC3FAF /* ViewController.m */,
+				AB9F87C918424A0500CC3FAF /* ViewController.xib */,
 			);
 			path = Honey;
 			sourceTree = "<group>";
@@ -178,7 +206,8 @@
 		AB9F87101841F66A00CC3FAF /* imags */ = {
 			isa = PBXGroup;
 			children = (
-				AB9F87121841F69700CC3FAF /* Honey.png */,
+				AB9F872518423E3200CC3FAF /* 登陆 */,
+				AB9F873018423E3200CC3FAF /* Honey.png */,
 			);
 			path = imags;
 			sourceTree = "<group>";
@@ -198,6 +227,23 @@
 				AB9F871A1841F7D400CC3FAF /* SoundPlayManager.m */,
 			);
 			name = "音效";
+			sourceTree = "<group>";
+		};
+		AB9F872518423E3200CC3FAF /* 登陆 */ = {
+			isa = PBXGroup;
+			children = (
+				AB9F872618423E3200CC3FAF /* login_avatar.png */,
+				AB9F872718423E3200CC3FAF /* login_avatar@2x.png */,
+				AB9F872818423E3200CC3FAF /* login_dropdown_avatar_border.png */,
+				AB9F872918423E3200CC3FAF /* login_dropdown_avatar_border@2x.png */,
+				AB9F872A18423E3200CC3FAF /* login_textfield.png */,
+				AB9F872B18423E3200CC3FAF /* login_textfield@2x.png */,
+				AB9F872C18423E3200CC3FAF /* login_textfield_more.png */,
+				AB9F872D18423E3200CC3FAF /* login_textfield_more@2x.png */,
+				AB9F872E18423E3200CC3FAF /* login_textfield_more_flip.png */,
+				AB9F872F18423E3200CC3FAF /* login_textfield_more_flip@2x.png */,
+			);
+			path = "登陆";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -275,11 +321,22 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB9F873918423E3200CC3FAF /* login_textfield_more_flip.png in Resources */,
+				AB9F873418423E3200CC3FAF /* login_dropdown_avatar_border@2x.png in Resources */,
+				AB9F87CB18424A0500CC3FAF /* ViewController.xib in Resources */,
 				AB72FFE8183E52CC000920E5 /* InfoPlist.strings in Resources */,
+				AB9F873518423E3200CC3FAF /* login_textfield.png in Resources */,
+				AB9F873718423E3200CC3FAF /* login_textfield_more.png in Resources */,
+				AB9F873218423E3200CC3FAF /* login_avatar@2x.png in Resources */,
 				AB72FFF0183E52CC000920E5 /* Images.xcassets in Resources */,
 				AB9F87151841F69F00CC3FAF /* tap.aif in Resources */,
+				AB9F873118423E3200CC3FAF /* login_avatar.png in Resources */,
+				AB9F873318423E3200CC3FAF /* login_dropdown_avatar_border.png in Resources */,
+				AB9F873A18423E3200CC3FAF /* login_textfield_more_flip@2x.png in Resources */,
+				AB9F873618423E3200CC3FAF /* login_textfield@2x.png in Resources */,
 				AB9F8720184208D200CC3FAF /* LoginView.xib in Resources */,
-				AB9F87131841F69700CC3FAF /* Honey.png in Resources */,
+				AB9F873818423E3200CC3FAF /* login_textfield_more@2x.png in Resources */,
+				AB9F873B18423E3200CC3FAF /* Honey.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +359,7 @@
 				AB9F871B1841F7D400CC3FAF /* SoundPlayManager.m in Sources */,
 				AB9F871E184208AE00CC3FAF /* LoginView.m in Sources */,
 				AB72FFEA183E52CC000920E5 /* main.m in Sources */,
+				AB9F87CA18424A0500CC3FAF /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
