@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ViewController.h"
+#import "LoginViewController.h"
 
 @implementation AppDelegate
 
@@ -15,7 +15,7 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     NSArray *nib=[[NSBundle mainBundle] loadNibNamed:@"LoginView" owner:self options:nil];
-    ViewController *loginView =[[ViewController alloc]init];
+    LoginViewController *loginView =[[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
     // Override point for customization after application launch.
     self.window.rootViewController = loginView;
     
