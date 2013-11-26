@@ -8,21 +8,57 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "Reachability.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    NSArray *nib=[[NSBundle mainBundle] loadNibNamed:@"LoginView" owner:self options:nil];
     LoginViewController *loginView =[[LoginViewController alloc]initWithNibName:@"LoginViewController" bundle:nil];
     // Override point for customization after application launch.
     self.window.rootViewController = loginView;
-    
     self.window.backgroundColor = [UIColor clearColor];
     [self.window makeKeyAndVisible];
+    
+    self.internetReachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+    [self updateInterfaceWithReachability:self.internetReachability];
+    [self.internetReachability startNotifier];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     return YES;
 }
+
+- (void)updateInterfaceWithReachability:(Reachability *)reachability{
+    NetworkStatus netStatus = [reachability currentReachabilityStatus];
+    NSString *netWorkStatus = nil;
+    if (netStatus == ReachableViaWiFi) {
+        NSLog(@"file %s ,ReachableViaWiFi", __FILE__);
+        netWorkStatus = @"ReachableViaWiFi";
+    }
+    if (netStatus == ReachableViaWWAN) {
+         NSLog(@"file %s ,ReachableViaWWAN", __FILE__);
+        netWorkStatus = @"ReachableViaWWAN";
+    }
+    if (netStatus == NotReachable) {
+         NSLog(@"file %s ,NotReachable", __FILE__);
+        netWorkStatus = @"无可用网络";
+        UIAlertView *netWorkAlert = [[UIAlertView alloc]initWithTitle:@"温馨提示"
+                                                              message:netWorkStatus
+                                                             delegate:self
+                                                    cancelButtonTitle:@"确认"
+                                                    otherButtonTitles:nil,nil];
+        [netWorkAlert show];
+    }
+
+}
+
+- (void) reachabilityChanged:(NSNotification *)note
+{
+	Reachability* curReach = [note object];
+	NSParameterAssert([curReach isKindOfClass:[Reachability class]]);
+	[self updateInterfaceWithReachability:curReach];
+}
+
 
 - (void)applicationWillResignActive:(UIApplication *)application
 {

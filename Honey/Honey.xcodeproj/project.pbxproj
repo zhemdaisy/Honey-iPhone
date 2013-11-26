@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB382B0618444103009D25B0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB382B0518444103009D25B0 /* Reachability.m */; };
 		AB720001183E52CC000920E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB72FFFF183E52CC000920E5 /* InfoPlist.strings */; };
 		AB720003183E52CC000920E5 /* HoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB720002183E52CC000920E5 /* HoneyTests.m */; };
 		AB72FFDE183E52CC000920E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFDD183E52CC000920E5 /* Foundation.framework */; };
@@ -48,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB382B0418444103009D25B0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = NewWork/Reachability.h; sourceTree = "<group>"; };
+		AB382B0518444103009D25B0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = NewWork/Reachability.m; sourceTree = "<group>"; };
 		AB720000183E52CC000920E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB720002183E52CC000920E5 /* HoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoneyTests.m; sourceTree = "<group>"; };
 		AB72FFDA183E52CC000920E5 /* Honey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +147,8 @@
 		AB72FFE3183E52CC000920E5 /* Honey */ = {
 			isa = PBXGroup;
 			children = (
+				AB382B0418444103009D25B0 /* Reachability.h */,
+				AB382B0518444103009D25B0 /* Reachability.m */,
 				AB9F87181841F78400CC3FAF /* 音效 */,
 				AB72FFEC183E52CC000920E5 /* AppDelegate.h */,
 				AB72FFED183E52CC000920E5 /* AppDelegate.m */,
@@ -350,6 +355,7 @@
 				AB72FFEE183E52CC000920E5 /* AppDelegate.m in Sources */,
 				AB9F871B1841F7D400CC3FAF /* SoundPlayManager.m in Sources */,
 				AB72FFEA183E52CC000920E5 /* main.m in Sources */,
+				AB382B0618444103009D25B0 /* Reachability.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
