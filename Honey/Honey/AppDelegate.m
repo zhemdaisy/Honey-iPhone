@@ -21,9 +21,13 @@
     self.window.backgroundColor = [UIColor clearColor];
     [self.window makeKeyAndVisible];
     
-    self.internetReachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
-    [self updateInterfaceWithReachability:self.internetReachability];
+    self.internetReachability = [Reachability reachabilityForInternetConnection];
     [self.internetReachability startNotifier];
+
+    self.hostReachability = [Reachability reachabilityWithHostName:@"www.baidu.com"];
+    [self.hostReachability startNotifier];
+    
+    [self updateInterfaceWithReachability:self.internetReachability];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
     return YES;
 }

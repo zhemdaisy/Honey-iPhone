@@ -11,7 +11,9 @@
 @class Reachability;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
-@property (nonatomic)Reachability *internetReachability;
+@property (nonatomic) Reachability *internetReachability;
+@property (nonatomic) Reachability *hostReachability;
+
 @property (strong, nonatomic) UIWindow *window;
 
 @end

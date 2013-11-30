@@ -7,11 +7,15 @@
 //
 
 #import "LoginViewController.h"
+#import "PreDefine.h"
+#import "RegistView.h"
 
 @interface LoginViewController ()
 
 @property (weak, nonatomic) IBOutlet UITextField *userName;
 @property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UIButton *registBtn;
+- (IBAction)registBtnPress:(id)sender;
 
 @end
 
@@ -44,12 +48,12 @@
 #pragma mark textField delegate
 
 - (void)textFieldDidBeginEditing:(UITextField *)textField{
-    self.view.center = CGPointMake(self.view.center.x, self.view.center.y-60);
+    self.view.center = CGPointMake(self.view.center.x, self.view.center.y-100);
 }
 
 - (void)textFieldDidEndEditing:(UITextField *)textField{
 
-    self.view.center = CGPointMake(self.view.center.x, self.view.center.y+60);
+    self.view.center = CGPointMake(self.view.center.x, self.view.center.y+100);
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)textField{
@@ -70,4 +74,9 @@
     }
 }
 
+- (IBAction)registBtnPress:(id)sender {
+    
+    RegistView *registView = [[[NSBundle mainBundle] loadNibNamed:@"RegistView" owner:self options:nil] objectAtIndex:0];
+    [self.view addSubview:registView];
+}
 @end
