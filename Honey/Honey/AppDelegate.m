@@ -5,10 +5,12 @@
 //  Created by Daisy on 13-11-21.
 //  Copyright (c) 2013年 Daisy&Jack. All rights reserved.
 //
-
+#import <Foundation/Foundation.h>
 #import "AppDelegate.h"
 #import "LoginViewController.h"
 #import "Reachability.h"
+#import "Network/GCDAsyncSocket.h"
+#import "ClientSocket.h"
 
 @implementation AppDelegate
 
@@ -29,6 +31,10 @@
     
     [self updateInterfaceWithReachability:self.internetReachability];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(reachabilityChanged:) name:kReachabilityChangedNotification object:nil];
+    ClientSocket *clientSocket = [ClientSocket sharedInstance];
+    [clientSocket startConnetSocket];
+    
+    
     return YES;
 }
 

@@ -7,8 +7,9 @@
 //
 
 #import "LoginViewController.h"
-#import "PreDefine.h"
+#import "MacroDefine.h"
 #import "RegistView.h"
+#import "mainView.h"
 
 @interface LoginViewController ()
 
@@ -16,6 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *password;
 @property (weak, nonatomic) IBOutlet UIButton *registBtn;
 - (IBAction)registBtnPress:(id)sender;
+- (IBAction)loginBtnPress:(id)sender;
 
 @end
 
@@ -78,5 +80,10 @@
     
     RegistView *registView = [[[NSBundle mainBundle] loadNibNamed:@"RegistView" owner:self options:nil] objectAtIndex:0];
     [self.view addSubview:registView];
+}
+
+- (IBAction)loginBtnPress:(id)sender {
+    mainView *mainview = mViewByNib(@"mainView");
+    [self.view addSubview:mainview];
 }
 @end

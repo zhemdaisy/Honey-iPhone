@@ -8,6 +8,7 @@
 
 #import "RegistView.h"
 #import "CategoryUtils.h"
+#import "PreDefine.h"
 
 @interface RegistView ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTF;
@@ -28,24 +29,20 @@
     self.firstPwdTF.delegate = self;
     self.secondPwdTF.delegate = self;
 }
-- (void)textFieldDidEndEditing:(UITextField *)textField{
-    if (textField == _accountTF) {
-        if ([textField.text isValidateEmail]) {
-            _registBtn.enabled = NO;
-        }
-    }
-    if (textField == _firstPwdTF) {
-        if ([textField.text isValidatePassword]) {
-            _registBtn.enabled = NO;
-        }
-    }
-    if (textField == _secondPwdTF) {
-        if ([textField.text isValidatePassword]) {
-            _registBtn.enabled = NO;
-        }
-    }
+
+#pragma mark----
+#pragma mark textField delegate
+
+-(BOOL) textFieldShouldReturn:(UITextField *)textField{
+    
+    [_firstPwdTF resignFirstResponder];
+    [_secondPwdTF resignFirstResponder];
+    [_accountTF resignFirstResponder];
+    return YES;
 }
-#pragma mark ---
+
+
+#pragma mark ----
 #pragma mark touch event
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event{
     UITouch *touch = [touches anyObject];
@@ -56,18 +53,24 @@
         [_firstPwdTF resignFirstResponder];
     }
 }
--(BOOL) textFieldShouldReturn:(UITextField *)textField{
-    
-    [_firstPwdTF resignFirstResponder];
-    [_secondPwdTF resignFirstResponder];
-    [_accountTF resignFirstResponder];
-    return YES;
-}
 
 
 
 - (IBAction)registBtnPress:(id)sender {
-    NSLog(@"注册了啦～～");
+    if (![_accountTF.text isValidateEmail]) {
+        mAlertView(@"您的邮箱输入有误");
+        return;
+    }
+    if (![_firstPwdTF.text isValidatePassword]){
+        mAlertView(@"请输入6-16位字母数字的密码");
+        return;
+    }
+    if (![_firstPwdTF.text isEqualToString:_secondPwdTF.text]) {
+        mAlertView(@"您两次输入的密码不一致哦" );
+        return;
+    }else{
+        NSLog(@"注册了啦～～");
+    }
 }
 
 - (IBAction)loginBtnPress:(id)sender {

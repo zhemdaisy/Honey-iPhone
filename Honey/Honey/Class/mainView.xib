@@ -11,24 +11,34 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mbt-sq-vva">
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN9-9m-EIb">
+                    <rect key="frame" x="127" y="189" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="Button">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                </button>
+                <tabBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ET2-JV-Wm5">
                     <rect key="frame" x="0.0" y="519" width="320" height="49"/>
                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
-                    <color key="backgroundColor" red="0.50196081399917603" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     <items>
-                        <tabBarItem title="聊天" id="t9J-8e-0JR"/>
-                        <tabBarItem title="幸福时光" id="m7v-2B-clZ"/>
-                        <tabBarItem title="浪漫满屋" id="G3t-v6-Hj6"/>
-                        <tabBarItem title="我滴" id="r3k-zD-LPf"/>
+                        <tabBarItem tag="1" systemItem="favorites" id="tJ1-WE-45Y"/>
+                        <tabBarItem tag="2" title="反馈" image="TabBar_feebBack.png" id="OrW-HM-k4I"/>
                     </items>
-                    <color key="barTintColor" red="1" green="0.80232093979999997" blue="0.81176471709999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="t1P-qQ-UOu"/>
+                    </connections>
                 </tabBar>
             </subviews>
-            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
             <connections>
-                <outlet property="tabBar" destination="Mbt-sq-vva" id="VMp-c1-AXr"/>
+                <outlet property="tabBar" destination="ET2-JV-Wm5" id="d5A-IV-gKv"/>
             </connections>
         </view>
     </objects>
+    <resources>
+        <image name="TabBar_feebBack.png" width="24" height="24"/>
+    </resources>
 </document>

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+@class GCDAsyncSocket;
 @class Reachability;
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    GCDAsyncSocket *asyncSocket;
+}
 
 @property (nonatomic) Reachability *internetReachability;
 @property (nonatomic) Reachability *hostReachability;

@@ -7,6 +7,7 @@
 //
 
 #import "mainView.h"
+#import "FeedbackView.h"
 
 @interface mainView()
 @property (weak, nonatomic) IBOutlet UITabBar *tabBar;
@@ -33,5 +34,21 @@
     // Drawing code
 }
 */
+- (void)awakeFromNib{
+    self.tabBar.delegate = self;
+}
 
+#pragma mark ----
+#pragma mark tabBar delegate
+-(void) tabBar:(UITabBar *)tabBar didSelectItem:(UITabBarItem *)item{
+    if (item.tag == 1) {
+        NSLog(@"");
+    }
+    if (item.tag == 2) {
+        NSLog(@"");
+        FeedbackView *feedbackView = [[[NSBundle mainBundle] loadNibNamed:@"FeedbackView" owner:self options:nil] objectAtIndex:0];
+        [self addSubview:feedbackView];
+
+    }
+}
 @end

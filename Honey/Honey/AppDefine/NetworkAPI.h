@@ -24,6 +24,8 @@ typedef enum
     TWWindowsPhone   = 4
 } TWOSPlatform;
 
+
+
 //成功失败Blocks
 typedef void (^TWFinishedBlock) (NSDictionary *data);
 typedef void (^TWFailedBlock)   (NSString *error);
@@ -39,5 +41,9 @@ typedef void (^TWUpdateDataBlock)   (void);
 
 //主页新鲜事
 #define kHomeList               @"getFeeds"
+#define socketPORT              7777
+#define socketHOST              @"192.168.1.4"
+
+#define socketFeedback          11
 
 

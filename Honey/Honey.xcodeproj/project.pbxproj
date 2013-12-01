@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB06D67E184AD5210026EF74 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB06D67D184AD5210026EF74 /* Reachability.m */; };
+		AB06D680184ADB650026EF74 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB06D67F184ADB650026EF74 /* CFNetwork.framework */; };
+		AB06D682184ADB710026EF74 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB06D681184ADB710026EF74 /* Security.framework */; };
+		AB06D687184ADBA40026EF74 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB06D684184ADBA40026EF74 /* GCDAsyncSocket.m */; };
+		AB06D688184ADBA40026EF74 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB06D686184ADBA40026EF74 /* GCDAsyncUdpSocket.m */; };
+		AB06D68E184ADD370026EF74 /* ClientSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = AB06D68D184ADD370026EF74 /* ClientSocket.m */; };
+		AB06D691184B25960026EF74 /* TabBar_feebBack.png in Resources */ = {isa = PBXBuildFile; fileRef = AB06D690184B25960026EF74 /* TabBar_feebBack.png */; };
+		AB06D694184B2B410026EF74 /* FeedbackView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB06D693184B2B410026EF74 /* FeedbackView.m */; };
+		AB06D696184B2B5A0026EF74 /* FeedbackView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB06D695184B2B5A0026EF74 /* FeedbackView.xib */; };
 		AB254EA61849C60900440F68 /* NSData+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB254E811849C60900440F68 /* NSData+Addition.m */; };
 		AB254EA71849C60900440F68 /* NSDate+Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB254E831849C60900440F68 /* NSDate+Addition.m */; };
 		AB254EA81849C60900440F68 /* NSFileManager+ Addition.m in Sources */ = {isa = PBXBuildFile; fileRef = AB254E841849C60900440F68 /* NSFileManager+ Addition.m */; };
@@ -30,7 +39,6 @@
 		AB254EC21849CAF200440F68 /* RegistView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB254EC01849CAF200440F68 /* RegistView.xib */; };
 		AB254EC9184A2D0A00440F68 /* mainView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB254EC8184A2D0A00440F68 /* mainView.m */; };
 		AB254ECB184A2D2100440F68 /* mainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB254ECA184A2D2100440F68 /* mainView.xib */; };
-		AB382B0618444103009D25B0 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB382B0518444103009D25B0 /* Reachability.m */; };
 		AB720001183E52CC000920E5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB72FFFF183E52CC000920E5 /* InfoPlist.strings */; };
 		AB720003183E52CC000920E5 /* HoneyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB720002183E52CC000920E5 /* HoneyTests.m */; };
 		AB72FFDE183E52CC000920E5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB72FFDD183E52CC000920E5 /* Foundation.framework */; };
@@ -70,6 +78,20 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		AB06D67C184AD5210026EF74 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AB06D67D184AD5210026EF74 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AB06D67F184ADB650026EF74 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		AB06D681184ADB710026EF74 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		AB06D683184ADBA40026EF74 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		AB06D684184ADBA40026EF74 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		AB06D685184ADBA40026EF74 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		AB06D686184ADBA40026EF74 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		AB06D68C184ADD370026EF74 /* ClientSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClientSocket.h; sourceTree = "<group>"; };
+		AB06D68D184ADD370026EF74 /* ClientSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClientSocket.m; sourceTree = "<group>"; };
+		AB06D690184B25960026EF74 /* TabBar_feebBack.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TabBar_feebBack.png; sourceTree = "<group>"; };
+		AB06D692184B2B410026EF74 /* FeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackView.h; sourceTree = "<group>"; };
+		AB06D693184B2B410026EF74 /* FeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackView.m; sourceTree = "<group>"; };
+		AB06D695184B2B5A0026EF74 /* FeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackView.xib; sourceTree = "<group>"; };
 		AB254E7F1849C60900440F68 /* CategoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryUtils.h; sourceTree = "<group>"; };
 		AB254E801849C60900440F68 /* NSData+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Addition.h"; sourceTree = "<group>"; };
 		AB254E811849C60900440F68 /* NSData+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Addition.m"; sourceTree = "<group>"; };
@@ -119,8 +141,6 @@
 		AB254EC7184A2D0A00440F68 /* mainView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mainView.h; sourceTree = "<group>"; };
 		AB254EC8184A2D0A00440F68 /* mainView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = mainView.m; sourceTree = "<group>"; };
 		AB254ECA184A2D2100440F68 /* mainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = mainView.xib; sourceTree = "<group>"; };
-		AB382B0418444103009D25B0 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Reachability.h; path = NewWork/Reachability.h; sourceTree = "<group>"; };
-		AB382B0518444103009D25B0 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Reachability.m; path = NewWork/Reachability.m; sourceTree = "<group>"; };
 		AB720000183E52CC000920E5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		AB720002183E52CC000920E5 /* HoneyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HoneyTests.m; sourceTree = "<group>"; };
 		AB72FFDA183E52CC000920E5 /* Honey.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Honey.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -159,6 +179,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB06D682184ADB710026EF74 /* Security.framework in Frameworks */,
+				AB06D680184ADB650026EF74 /* CFNetwork.framework in Frameworks */,
 				AB9F87171841F6E900CC3FAF /* AudioToolbox.framework in Frameworks */,
 				AB72FFE0183E52CC000920E5 /* CoreGraphics.framework in Frameworks */,
 				AB72FFE2183E52CC000920E5 /* UIKit.framework in Frameworks */,
@@ -179,6 +201,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AB06D67B184AD5210026EF74 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				AB06D683184ADBA40026EF74 /* GCDAsyncSocket.h */,
+				AB06D684184ADBA40026EF74 /* GCDAsyncSocket.m */,
+				AB06D685184ADBA40026EF74 /* GCDAsyncUdpSocket.h */,
+				AB06D686184ADBA40026EF74 /* GCDAsyncUdpSocket.m */,
+				AB06D67C184AD5210026EF74 /* Reachability.h */,
+				AB06D67D184AD5210026EF74 /* Reachability.m */,
+				AB06D68C184ADD370026EF74 /* ClientSocket.h */,
+				AB06D68D184ADD370026EF74 /* ClientSocket.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		AB06D68F184B25960026EF74 /* 标签栏 */ = {
+			isa = PBXGroup;
+			children = (
+				AB06D690184B25960026EF74 /* TabBar_feebBack.png */,
+			);
+			path = "标签栏";
+			sourceTree = "<group>";
+		};
 		AB254E7E1849C60900440F68 /* Category */ = {
 			isa = PBXGroup;
 			children = (
@@ -233,6 +278,9 @@
 				AB254EC7184A2D0A00440F68 /* mainView.h */,
 				AB254EC8184A2D0A00440F68 /* mainView.m */,
 				AB254ECA184A2D2100440F68 /* mainView.xib */,
+				AB06D692184B2B410026EF74 /* FeedbackView.h */,
+				AB06D693184B2B410026EF74 /* FeedbackView.m */,
+				AB06D695184B2B5A0026EF74 /* FeedbackView.xib */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -272,6 +320,8 @@
 		AB72FFDC183E52CC000920E5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				AB06D681184ADB710026EF74 /* Security.framework */,
+				AB06D67F184ADB650026EF74 /* CFNetwork.framework */,
 				AB9F87161841F6E900CC3FAF /* AudioToolbox.framework */,
 				AB72FFDD183E52CC000920E5 /* Foundation.framework */,
 				AB72FFDF183E52CC000920E5 /* CoreGraphics.framework */,
@@ -284,11 +334,10 @@
 		AB72FFE3183E52CC000920E5 /* Honey */ = {
 			isa = PBXGroup;
 			children = (
+				AB06D67B184AD5210026EF74 /* Network */,
 				AB254EB91849C65100440F68 /* AppDefine */,
 				AB254E7E1849C60900440F68 /* Category */,
 				AB254EA21849C60900440F68 /* Class */,
-				AB382B0418444103009D25B0 /* Reachability.h */,
-				AB382B0518444103009D25B0 /* Reachability.m */,
 				AB9F87181841F78400CC3FAF /* 音效 */,
 				AB72FFEC183E52CC000920E5 /* AppDelegate.h */,
 				AB72FFED183E52CC000920E5 /* AppDelegate.m */,
@@ -340,6 +389,7 @@
 		AB9F87101841F66A00CC3FAF /* imags */ = {
 			isa = PBXGroup;
 			children = (
+				AB06D68F184B25960026EF74 /* 标签栏 */,
 				AB9F872518423E3200CC3FAF /* 登陆 */,
 				AB9F873018423E3200CC3FAF /* Honey.png */,
 			);
@@ -460,6 +510,7 @@
 				AB72FFE8183E52CC000920E5 /* InfoPlist.strings in Resources */,
 				AB9F873518423E3200CC3FAF /* login_textfield.png in Resources */,
 				AB9F873718423E3200CC3FAF /* login_textfield_more.png in Resources */,
+				AB06D696184B2B5A0026EF74 /* FeedbackView.xib in Resources */,
 				AB254EB81849C60900440F68 /* LoginViewController.xib in Resources */,
 				AB254EC21849CAF200440F68 /* RegistView.xib in Resources */,
 				AB9F873218423E3200CC3FAF /* login_avatar@2x.png in Resources */,
@@ -467,6 +518,7 @@
 				AB9F87151841F69F00CC3FAF /* tap.aif in Resources */,
 				AB9F873118423E3200CC3FAF /* login_avatar.png in Resources */,
 				AB9F873318423E3200CC3FAF /* login_dropdown_avatar_border.png in Resources */,
+				AB06D691184B25960026EF74 /* TabBar_feebBack.png in Resources */,
 				AB9F873A18423E3200CC3FAF /* login_textfield_more_flip@2x.png in Resources */,
 				AB9F873618423E3200CC3FAF /* login_textfield@2x.png in Resources */,
 				AB9F873818423E3200CC3FAF /* login_textfield_more@2x.png in Resources */,
@@ -496,23 +548,27 @@
 				AB9F871B1841F7D400CC3FAF /* SoundPlayManager.m in Sources */,
 				AB254EA61849C60900440F68 /* NSData+Addition.m in Sources */,
 				AB254EAC1849C60900440F68 /* UIAlertView+Addition.m in Sources */,
+				AB06D687184ADBA40026EF74 /* GCDAsyncSocket.m in Sources */,
 				AB254EC11849CAF200440F68 /* RegistView.m in Sources */,
 				AB254EB41849C60900440F68 /* UIView+Animation.m in Sources */,
 				AB254EAA1849C60900440F68 /* NSString+MD5Addition.m in Sources */,
 				AB254EB51849C60900440F68 /* UIView+Frame.m in Sources */,
+				AB06D67E184AD5210026EF74 /* Reachability.m in Sources */,
 				AB254EA81849C60900440F68 /* NSFileManager+ Addition.m in Sources */,
 				AB254EB01849C60900440F68 /* UIImage+Addition.m in Sources */,
+				AB06D68E184ADD370026EF74 /* ClientSocket.m in Sources */,
 				AB254EAB1849C60900440F68 /* NSString+Regular.m in Sources */,
 				AB254EC9184A2D0A00440F68 /* mainView.m in Sources */,
 				AB254EA91849C60900440F68 /* NSString+Addition.m in Sources */,
 				AB254EB61849C60900440F68 /* UIView+Layer.m in Sources */,
 				AB254EAD1849C60900440F68 /* UIColor+Addition.m in Sources */,
 				AB254EB21849C60900440F68 /* UITextField+LimitLength.m in Sources */,
+				AB06D694184B2B410026EF74 /* FeedbackView.m in Sources */,
 				AB72FFEA183E52CC000920E5 /* main.m in Sources */,
 				AB254EB31849C60900440F68 /* UIView+Addition.m in Sources */,
 				AB254EAF1849C60900440F68 /* UIDevice+IdentifierAddition.m in Sources */,
-				AB382B0618444103009D25B0 /* Reachability.m in Sources */,
 				AB254EB71849C60900440F68 /* LoginViewController.m in Sources */,
+				AB06D688184ADBA40026EF74 /* GCDAsyncUdpSocket.m in Sources */,
 				AB254EB11849C60900440F68 /* UIImageView+LBBlurredImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

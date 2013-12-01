@@ -1,6 +1,6 @@
 
 #import "AppDelegate.h"
-
+#import <UIKit/UIKit.h>
 /*--------------------------------开发中常用到的宏定义--------------------------------------*/
 
 //系统目录
@@ -21,7 +21,7 @@
 //以tag读取View
 #define mViewByTag(parentView, tag, Class)  (Class *)[parentView viewWithTag:tag]
 //读取Xib文件的类
-#define mViewByNib(Class, owner) [[[NSBundle mainBundle] loadNibNamed:Class owner:owner options:nil] lastObject]
+#define mViewByNib(Class) [[[NSBundle mainBundle] loadNibNamed:Class owner:self options:nil] objectAtIndex:0]
 
 //id对象与NSData之间转换
 #define mObjectToData(object)   [NSKeyedArchiver archivedDataWithRootObject:object]
@@ -42,8 +42,8 @@
 #define kGCDMain(block)       dispatch_async(dispatch_get_main_queue(),block)
 
 //简单的以AlertView显示提示信息
-#define mAlertView(title, msg) \
-UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title message:msg delegate:nil \
+#define mAlertView( msg) \
+UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"温馨提示" message:msg delegate:nil \
 cancelButtonTitle:@"确定" \
 otherButtonTitles:nil]; \
 [alert show];
