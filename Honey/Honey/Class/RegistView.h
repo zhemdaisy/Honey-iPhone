@@ -10,3 +10,9 @@
 
 @interface RegistView : UIView<UITextFieldDelegate>
 @end
+
+@protocol RegistDelegate <NSObject>
+
+- (void)registCallback:(NSDictionary*)registDict;
+
+@end

@@ -8,11 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "GCDAsyncSocket.h"
+#import "SocketHandleProtocol.h"
 
 @interface ClientSocket : NSObject
 {
     GCDAsyncSocket *clientSoket;
 }
+@property(nonatomic, strong)NSMutableDictionary *hanlers;
+@property(nonatomic, weak)id<SocketHandleProtocol> delegate;
 + (id)sharedInstance;
 /**
  * @brief 连接IP 端口
@@ -23,5 +26,5 @@
  * @brief 发送数据
  *
  */
-- (void)sendNetworkPacket:(NSData *)data withTag:(long)tag;
+- (void)sendNetworkPacket:(NSDictionary *)packetDict;
 @end

@@ -9,6 +9,7 @@
 #import "RegistView.h"
 #import "CategoryUtils.h"
 #import "PreDefine.h"
+#import "ClientSocket.h"
 
 @interface RegistView ()
 @property (weak, nonatomic) IBOutlet UITextField *accountTF;
@@ -70,10 +71,17 @@
         return;
     }else{
         NSLog(@"注册了啦～～");
+        NSDictionary *registDict = @{@"module": @"signUp",
+                                     @"name":_accountTF.text,
+                                     @"password":_firstPwdTF.text,
+                                     @"email": _accountTF.text};
+        [[ClientSocket sharedInstance]sendNetworkPacket:registDict];
     }
 }
 
 - (IBAction)loginBtnPress:(id)sender {
     [self removeFromSuperview];
 }
+
+
 @end

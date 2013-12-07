@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SocketHandleProtocol.h"
 
-@interface FeedbackView : UIView
-
+@interface FeedbackView : UIView<SocketHandleProtocol>
+- (void)ssss;
 @end

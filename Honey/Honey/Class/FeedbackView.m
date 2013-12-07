@@ -45,25 +45,12 @@
         return;
     }
     NSDictionary *dicFeedback = @{@"module": @"feedback", @"content": self.textView.text};
-    NSError *error = nil;
-    NSData *content = [NSJSONSerialization dataWithJSONObject:dicFeedback options:kNilOptions error:&error];
-    if (error != nil) {
-        NSLog(@"parase json error : %@", error);
-    }
-    NSNumber *len = [NSNumber numberWithInt: [content length]];
-    NSDictionary *length = @{@"len": len};
-    NSData *header = [NSJSONSerialization dataWithJSONObject:length options:kNilOptions error:&error];
-    if (error != nil) {
-        NSLog(@"parase json error : %@", error);
-    }
+    ClientSocket *socket = [ClientSocket sharedInstance];
+    socket.delegate = self;
+    [socket sendNetworkPacket:dicFeedback];
+}
 
-    NSMutableData *cData = [NSMutableData dataWithData:header];
-    NSData *xData = [NSData dataWithBytes:[@"*" UTF8String] length:[@"*" lengthOfBytesUsingEncoding:NSUTF8StringEncoding]];
-    for (; [cData length]<12; ) {
-        [cData appendData:xData];
-    }
-    [cData appendData:content];
-
-    [[ClientSocket sharedInstance]sendNetworkPacket:cData withTag:socketFeedback];
+-(void)signUpCallback:(NSDictionary *)dict{
+    
 }
 @end

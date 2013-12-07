@@ -92,6 +92,7 @@
 		AB06D692184B2B410026EF74 /* FeedbackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeedbackView.h; sourceTree = "<group>"; };
 		AB06D693184B2B410026EF74 /* FeedbackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeedbackView.m; sourceTree = "<group>"; };
 		AB06D695184B2B5A0026EF74 /* FeedbackView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FeedbackView.xib; sourceTree = "<group>"; };
+		AB1665401850C1F300166652 /* SocketHandleProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocketHandleProtocol.h; sourceTree = "<group>"; };
 		AB254E7F1849C60900440F68 /* CategoryUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryUtils.h; sourceTree = "<group>"; };
 		AB254E801849C60900440F68 /* NSData+Addition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+Addition.h"; sourceTree = "<group>"; };
 		AB254E811849C60900440F68 /* NSData+Addition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Addition.m"; sourceTree = "<group>"; };
@@ -212,6 +213,7 @@
 				AB06D67D184AD5210026EF74 /* Reachability.m */,
 				AB06D68C184ADD370026EF74 /* ClientSocket.h */,
 				AB06D68D184ADD370026EF74 /* ClientSocket.m */,
+				AB1665401850C1F300166652 /* SocketHandleProtocol.h */,
 			);
 			path = Network;
 			sourceTree = "<group>";
